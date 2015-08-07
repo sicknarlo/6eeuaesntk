@@ -20,6 +20,6 @@ $ rake db:seed
 2. Write a feature test where the user signs into the site and is redirected to their own `user_shoes_path`.
 3. Write a feature test where the user creates a new pair of shoes and is redirected to the `shoe_path`.
 4. Test the validity of a new `User` object with various missing attributes.
-5. Test the password length validations that already exist on the `User` model.
+5. Test the username length validations that already exist on the `User` model.
 6. Test that the `shoes#index` controller action sets the instance variable `@shoes` correctly using a group of 5 shoes.  
 
