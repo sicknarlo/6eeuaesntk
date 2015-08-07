@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
 
+  def show
+    @user = User.find params[:id]
+  end
+
   def new
     @user = User.new
   end
@@ -8,7 +12,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:success] = "Welcome, new user!"
-      redirect_to user_shoes_path
+      redirect_to @user
     else
       flash.now[:error] = "Something went wrong."
       render :new

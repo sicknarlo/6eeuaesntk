@@ -16,9 +16,9 @@ $ rake db:migrate
 $ rake db:seed
 ```
 
-1. Add a session-based user authentication system. Nobody should be able to see a `user_shoes_path` without logging in first.
-2. Write a feature test where the user signs into the site and is redirected to their own `user_shoes_path`.
-3. Write a feature test where the user creates a new pair of shoes and is redirected to the `shoe_path`.
+1. Add a session-based user authentication system. Nobody should be able to see a `user_path` without logging in first.
+2. Write a feature test where the user signs into the site and is redirected to their own `user_path`.
+3. Write a feature test where the user creates a new pair of shoes and is redirected to their `user_path` and sees the shoes listed in the table. **This test will fail! Make it pass.**
 4. Test the validity of a new `User` object with various missing attributes.
 5. Test the username length validations that already exist on the `User` model.
 6. Test that the `shoes#index` controller action sets the instance variable `@shoes` correctly using a group of 5 shoes.  
