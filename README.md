@@ -2,7 +2,7 @@
 
 Fork and clone this repo, and submit a pull request when you're done.
 
-###1. Survey sez...
+###1. Authentication & miscellaneous questions.
 Answer the questions on [this Google Form](https://docs.google.com/forms/d/1pVvxqXfkNZ8OCbnA_mw-I1AkJ4wT6tdNi3q4FDpt31E/viewform?usp=send_form).
 
 ###2. My voice is my passport. Verify me.
