@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   root 'users#new'
 
-  resources :users, only: [:show, :new, :create]
+  resources :users, only: [:show, :new, :create] do
+    resources :shoes, only: [:new, :create]
+  end
 
 
   # The priority is based upon order of creation: first created -> highest priority.

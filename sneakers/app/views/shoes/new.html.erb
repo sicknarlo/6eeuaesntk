@@ -1,0 +1,17 @@
+<h1>Add a pair of shoes to your closet, <%= @shoe.user.username %>.</h1>
+
+<%= form_for [@shoe.user, @shoe] do |f| %>
+  Brand<br>
+  <%= f.text_field :brand %>
+  <br><br>
+  Model<br>
+  <%= f.text_field :model %>
+  <br><br>
+  Year<br>
+  <%= f.select :year, ((Time.zone.now.year - 100)..(Time.zone.now.year + 1)).to_a.reverse %>
+  <br><br>
+  Purchase Date<br>
+  <%= f.date_select :purchase_date %>
+  <br><br>
+  <%= f.submit %>
+<% end %>
