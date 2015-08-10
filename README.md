@@ -15,9 +15,9 @@ $ rake db:create
 $ rake db:migrate
 ```
 
-1. Add a session-based user authentication system. Nobody should be able to see a `user_path` without logging in first.
-2. Write a feature test where the user signs into the site and is redirected to their own `user_path`.
-3. Write a feature test where the user creates a new pair of shoes, is redirected to their `user_path`, and sees the shoes listed in the table. This test will fail. Make it pass without using an instance variable for `@shoes`.
+1. Add a session-based user authentication system. Nobody should be able to see any `user_path`s without logging in first.
+2. Write a feature test to verify that when the user signs into the site they are redirected to their own `user_path`.
+3. Write a feature test to verify that when the user creates a new pair of shoes, they are redirected to their `user_path`, and that they see the shoes listed in the table. This test will fail. Make it pass without using an instance variable for `@shoes`.
 4. Write tests for the username length validations that already exist on the `User` model.
 5. A `Shoe` should be invalid if any of the four attributes is missing. Write failing tests that reflect this, then make them pass.
 6. Write two controller tests for `users#show`.
